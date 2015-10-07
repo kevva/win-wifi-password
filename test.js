@@ -1,16 +1,13 @@
-'use strict';
-var test = require('ava');
-var winWifiPassword = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	t.plan(1);
-
+test(async t => {
 	if (process.env.CI) {
-		t.assert(true);
 		return;
 	}
 
-	winWifiPassword().then(function (password) {
-		t.assert(password, password);
-	});
+	t.plan(1);
+
+	const password = await fn();
+	t.ok(password);
 });

@@ -2,37 +2,7 @@
 
 > Get current wifi password on Windows
 
-
-## Install
-
-```
-$ npm install --save win-wifi-password
-```
-
-
-## Usage
-
-```js
-const winWifiPassword = require('win-wifi-password');
-
-winWifiPassword().then(password => {
-	console.log(password);
-	//=> 'johndoesecretpassword'
-});
-```
-
-
-## API
-
-### winWifiPassword([name])
-
-Returns a promise that resolves to a string containing the password.
-
-#### name
-
-Type: `string`
-
-Get the wifi password for a specified *known* network.
+**Deprecated in favor of [wifi-password](https://github.com/kevva/wifi-password).**
 
 
 ## License

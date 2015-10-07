@@ -1,4 +1,4 @@
-# win-wifi-password [![Build Status](https://travis-ci.org/kevva/win-wifi-password.svg?branch=master)](https://travis-ci.org/kevva/win-wifi-password)
+# win-wifi-password
 
 > Get current wifi password on Windows
 

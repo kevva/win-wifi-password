@@ -25,6 +25,8 @@
     "win"
   ],
   "dependencies": {
+    "pify": "^2.2.0",
+    "pinkie-promise": "^1.0.0",
     "wifi-name": "^1.0.9"
   },
   "devDependencies": {

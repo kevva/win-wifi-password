@@ -13,9 +13,9 @@ $ npm install --save win-wifi-password
 ## Usage
 
 ```js
-var winWifiPassword = require('win-wifi-password');
+const winWifiPassword = require('win-wifi-password');
 
-winWifiPassword(function (err, password) {
+winWifiPassword().then(password => {
 	console.log(password);
 	//=> 'johndoesecretpassword'
 });
@@ -24,19 +24,15 @@ winWifiPassword(function (err, password) {
 
 ## API
 
-### winWifiPassword([name], callback)
+### winWifiPassword([name])
+
+Returns a promise that resolves to a string containing the password.
 
 #### name
 
 Type: `string`
 
 Get the wifi password for a specified *known* network.
-
-#### callback(err, password)
-
-Type: `function`
-
-The callback will return the password to the network.
 
 
 ## License
